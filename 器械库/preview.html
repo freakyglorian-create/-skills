@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>鼻部整形 · 术后恢复器械资产库（预览）</title>
+<style>
+  :root { --ink:#1d2329; --mut:#6b7280; --line:#e4e7ea; --accent:#e5484d; --bg:#f7f8fa; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.6 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif; color:var(--ink); background:var(--bg); }
+  header { padding:28px 32px 12px; }
+  header h1 { margin:0 0 4px; font-size:20px; }
+  header p { margin:0; color:var(--mut); font-size:13px; }
+  .wrap { max-width:1040px; margin:0 auto; padding:12px 32px 48px; }
+  .note { font-size:12.5px; color:var(--mut); background:#eef1f4; border:1px solid var(--line); border-radius:8px; padding:8px 12px; margin:14px 0 22px; }
+  .grid { display:grid; grid-template-columns:1fr; gap:24px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px 18px; }
+  .card h2 { margin:0 0 2px; font-size:15px; }
+  .card .sub { color:var(--mut); font-size:12px; margin-bottom:12px; }
+  .stage { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px; }
+  .stage button { font:13px system-ui,sans-serif; padding:5px 12px; border:1px solid var(--line); background:#fff; border-radius:999px; cursor:pointer; color:#374151; }
+  .stage button.active { background:var(--ink); color:#fff; border-color:var(--ink); }
+  .checker { background:repeating-conic-gradient(#ececec 0% 25%, #ffffff 0% 50%) 0 0 / 16px 16px; border:1px solid var(--line); border-radius:10px; padding:14px; text-align:center; }
+  .checker svg { max-width:100%; height:auto; vertical-align:middle; }
+  .legend { display:flex; gap:14px; flex-wrap:wrap; font-size:12px; color:var(--mut); margin-top:10px; }
+  .legend i { display:inline-block; width:10px; height:10px; border-radius:50%; background:var(--accent); margin-right:5px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>鼻部整形 · 术后恢复期器械资产库</h1>
+  <p>效果预览（2 个器械示例）— 每个器械含 正面 / 侧面 / 模板 三视角，可切换 标准图 / 轮廓 / 关键点</p>
+</header>
+
+<div class="wrap">
+  <div class="note">⚡ 这是先做的两个样例供确认风格。透明底用棋盘格示意；「关键点」红色圆点为器械配准点。确认后可批量补齐其余器械（铝制夹板、石膏夹板、Steri-Strip、纱布、胡须敷料、Doyle 鼻栓、冷敷面罩）。</div>
+
+  <div class="grid">
+
+    <!-- 热塑鼻夹板 -->
+    <div class="card" id="card-splint">
+      <h2>热塑鼻夹板 <span style="font-weight:400;color:var(--mut)">Thermoplastic nasal splint</span></h2>
+      <div class="sub">覆盖鼻背（鼻根→鼻尖上区），夹板孔洞透气 · 三视角：正面 / 侧面 / 未塑形模板</div>
+      <div class="stage">
+        <button data-mode="standard" class="active">标准图</button>
+        <button data-mode="outline">轮廓</button>
+        <button data-mode="kp">关键点</button>
+      </div>
+      <div class="checker">
+<svg class="asset" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" style="max-width:660px">
+  <style>
+    .fill { stroke:#3a3f45; stroke-width:2.5; stroke-linejoin:round; }
+    .outline { fill:none; stroke:#3a3f45; stroke-width:2.5; stroke-linejoin:round; stroke-linecap:round; display:none; }
+    .kp { display:none; }
+    .kd { fill:#e5484d; stroke:#fff; stroke-width:1.3; }
+    .kl { font:600 10px system-ui,sans-serif; fill:#b3242a; }
+  </style>
+  <g data-view="front">
+    <g class="fill">
+      <path fill="#f5f1e8" opacity="0.94" d="M100 88 C88 104 76 128 70 156 C64 184 62 200 72 214 C80 226 90 232 100 233 C110 232 120 226 128 214 C138 200 136 184 130 156 C124 128 112 104 100 88 Z"/>
+      <path fill="none" stroke="#d9d4c7" stroke-width="1.2" d="M100 96 L100 224"/>
+      <circle fill="#e9e4d6" cx="86" cy="150" r="3"/><circle fill="#e9e4d6" cx="114" cy="150" r="3"/>
+      <circle fill="#e9e4d6" cx="82" cy="178" r="3"/><circle fill="#e9e4d6" cx="118" cy="178" r="3"/>
+      <circle fill="#e9e4d6" cx="100" cy="168" r="3"/>
+    </g>
+    <g class="outline">
+      <path d="M100 88 C88 104 76 128 70 156 C64 184 62 200 72 214 C80 226 90 232 100 233 C110 232 120 226 128 214 C138 200 136 184 130 156 C124 128 112 104 100 88 Z"/>
+      <path d="M100 96 L100 224"/>
+    </g>
+    <g class="kp">
+      <circle class="kd" cx="100" cy="88"  r="3.5"/><text class="kl" x="106" y="86">上端·鼻根</text>
+      <circle class="kd" cx="100" cy="233" r="3.5"/><text class="kl" x="106" y="240">下端·鼻尖上区</text>
+      <circle class="kd" cx="70"  cy="170" r="3.5"/><text class="kl" x="40"  y="168">左缘</text>
+      <circle class="kd" cx="130" cy="170" r="3.5"/><text class="kl" x="136" y="168">右缘</text>
+    </g>
+  </g>
+  <g data-view="profile">
+    <g class="fill">
+      <path fill="#f5f1e8" opacity="0.94" d="M316 88 C310 132 304 172 298 208 L312 206 C318 172 324 132 332 90 Z"/>
+      <path fill="none" stroke="#d9d4c7" stroke-width="1" d="M312 96 C307 134 302 170 299 202"/>
+    </g>
+    <g class="outline">
+      <path d="M316 88 C310 132 304 172 298 208 L312 206 C318 172 324 132 332 90 Z"/>
+    </g>
+    <g class="kp">
+      <circle class="kd" cx="316" cy="88"  r="3.5"/><text class="kl" x="322" y="86">鼻根端</text>
+      <circle class="kd" cx="298" cy="208" r="3.5"/><text class="kl" x="276" y="214">鼻尖上区端</text>
+    </g>
+  </g>
+  <g data-view="flat">
+    <g class="fill">
+      <rect x="515" y="110" width="90" height="70" rx="12" fill="#fbfaf6" opacity="0.9"/>
+      <path fill="none" stroke="#c9c4b6" stroke-width="1.4" stroke-dasharray="5 4" d="M560 126 C552 136 545 150 541 166 C537 182 537 192 542 200 C546 207 552 211 560 211 C568 211 574 207 578 200 C583 192 583 182 579 166 C575 150 568 136 560 126 Z"/>
+      <text x="560" y="264" text-anchor="middle" font="500 10px system-ui,sans-serif" fill="#6b6b6b">未塑形热塑片（虚线为剪裁线）</text>
+    </g>
+    <g class="outline">
+      <rect x="515" y="110" width="90" height="70" rx="12"/>
+      <path d="M560 126 C552 136 545 150 541 166 C537 182 537 192 542 200 C546 207 552 211 560 211 C568 211 574 207 578 200 C583 192 583 182 579 166 C575 150 568 136 560 126 Z"/>
+    </g>
+    <g class="kp">
+      <circle class="kd" cx="560" cy="126" r="3.5"/><text class="kl" x="566" y="124">剪裁上端</text>
+      <circle class="kd" cx="560" cy="211" r="3.5"/><text class="kl" x="566" y="218">剪裁下端</text>
+    </g>
+  </g>
+</svg>
+      </div>
+      <div class="legend"><span><i></i>关键点/配准点</span><span>· 白色棋盘格 = 透明背景</span></div>
+    </div>
+
+    <!-- 医用胶带 -->
+    <div class="card" id="card-tape">
+      <h2>医用胶带 / 免缝胶带 <span style="font-weight:400;color:var(--mut)">Micropore tape</span></h2>
+      <div class="sub">竖条贴鼻背（鼻根→鼻尖上区）+ 两条横条加固 · 三视角：正面 / 侧面 / 胶带卷</div>
+      <div class="stage">
+        <button data-mode="standard" class="active">标准图</button>
+        <button data-mode="outline">轮廓</button>
+        <button data-mode="kp">关键点</button>
+      </div>
+      <div class="checker">
+<svg class="asset" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" style="max-width:660px">
+  <style>
+    .fill { stroke:#3a3f45; stroke-width:2.5; stroke-linejoin:round; }
+    .outline { fill:none; stroke:#3a3f45; stroke-width:2.5; stroke-linejoin:round; stroke-linecap:round; display:none; }
+    .kp { display:none; }
+    .kd { fill:#e5484d; stroke:#fff; stroke-width:1.3; }
+    .kl { font:600 10px system-ui,sans-serif; fill:#b3242a; }
+    .pore { fill:#cbb894; }
+  </style>
+  <g data-view="front">
+    <g class="fill">
+      <rect x="87" y="88"  width="26" height="148" rx="6" fill="#e6d6b8" opacity="0.96"/>
+      <rect x="58" y="140" width="84" height="22"  rx="5" fill="#e6d6b8" opacity="0.96"/>
+      <rect x="60" y="186" width="80" height="22"  rx="5" fill="#e6d6b8" opacity="0.96"/>
+      <g class="pore">
+        <circle cx="100" cy="104" r="1"/><circle cx="100" cy="120" r="1"/><circle cx="100" cy="136" r="1"/>
+        <circle cx="100" cy="152" r="1"/><circle cx="100" cy="168" r="1"/><circle cx="100" cy="184" r="1"/>
+        <circle cx="100" cy="200" r="1"/><circle cx="100" cy="216" r="1"/><circle cx="100" cy="232" r="1"/>
+        <circle cx="72" cy="151" r="1"/><circle cx="88" cy="151" r="1"/><circle cx="104" cy="151" r="1"/><circle cx="120" cy="151" r="1"/>
+        <circle cx="74" cy="197" r="1"/><circle cx="90" cy="197" r="1"/><circle cx="106" cy="197" r="1"/><circle cx="122" cy="197" r="1"/>
+      </g>
+    </g>
+    <g class="outline">
+      <rect x="87" y="88"  width="26" height="148" rx="6"/>
+      <rect x="58" y="140" width="84" height="22"  rx="5"/>
+      <rect x="60" y="186" width="80" height="22"  rx="5"/>
+    </g>
+    <g class="kp">
+      <circle class="kd" cx="100" cy="92"  r="3.5"/><text class="kl" x="106" y="90">竖条上端·鼻根</text>
+      <circle class="kd" cx="100" cy="232" r="3.5"/><text class="kl" x="106" y="240">竖条下端·鼻尖上区</text>
+      <circle class="kd" cx="100" cy="150" r="3.5"/><text class="kl" x="106" y="148">上横条</text>
+      <circle class="kd" cx="100" cy="196" r="3.5"/><text class="kl" x="106" y="194">下横条</text>
+    </g>
+  </g>
+  <g data-view="profile">
+    <g class="fill">
+      <path fill="#e6d6b8" opacity="0.96" d="M316 88 C310 132 304 172 298 208 L303 207 C308 172 314 132 321 90 Z"/>
+    </g>
+    <g class="outline">
+      <path d="M316 88 C310 132 304 172 298 208 L303 207 C308 172 314 132 321 90 Z"/>
+    </g>
+    <g class="kp">
+      <circle class="kd" cx="316" cy="88"  r="3.5"/><text class="kl" x="322" y="86">鼻根端</text>
+      <circle class="kd" cx="298" cy="208" r="3.5"/><text class="kl" x="276" y="214">鼻尖上区端</text>
+    </g>
+  </g>
+  <g data-view="flat">
+    <g class="fill">
+      <circle cx="545" cy="150" r="26" fill="#e6d6b8" opacity="0.96"/>
+      <circle cx="545" cy="150" r="10" fill="#fbfaf6" opacity="0.9"/>
+      <rect x="588" y="132" width="52" height="34" rx="6" fill="#e6d6b8" opacity="0.96"/>
+      <circle cx="600" cy="149" r="1" class="pore"/><circle cx="616" cy="149" r="1" class="pore"/><circle cx="632" cy="149" r="1" class="pore"/>
+      <text x="545" y="200" text-anchor="middle" font="500 10px system-ui,sans-serif" fill="#6b6b6b">胶带卷 + 剪裁条</text>
+    </g>
+    <g class="outline">
+      <circle cx="545" cy="150" r="26"/>
+      <circle cx="545" cy="150" r="10"/>
+      <rect x="588" y="132" width="52" height="34" rx="6"/>
+    </g>
+    <g class="kp">
+      <circle class="kd" cx="545" cy="150" r="3.5"/><text class="kl" x="552" y="148">卷芯</text>
+    </g>
+  </g>
+</svg>
+      </div>
+      <div class="legend"><span><i></i>关键点/配准点</span><span>· 胶带上的小点为透气孔纹理</span></div>
+    </div>
+
+    <!-- 鼻部关键点参考 -->
+    <div class="card">
+      <h2>鼻部解剖关键点参考 <span style="font-weight:400;color:var(--mut)">Anatomical landmarks</span></h2>
+      <div class="sub">器械贴合配准的基准点位（正面 + 侧面），用于把器械覆盖到鼻部参考图上</div>
+      <div class="checker" style="display:flex;gap:24px;justify-content:center;align-items:flex-start;flex-wrap:wrap">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 320" width="200" height="320">
+  <style>
+    .body { fill:#f2c6a0; stroke:#3a3f45; stroke-width:2.5; stroke-linejoin:round; }
+    .nostril { fill:#c98e68; stroke:#3a3f45; stroke-width:1.4; }
+    .kp { fill:#e5484d; stroke:#ffffff; stroke-width:1.3; }
+    .kl { font:600 9px system-ui,sans-serif; fill:#b3242a; }
+  </style>
+  <path class="body" d="M100 46 C92 60 86 84 85 116 C84 148 81 188 74 220 C69 243 62 252 66 266 C69 275 74 279 80 280 C86 281 92 282 100 283 C108 282 114 281 120 280 C126 279 131 275 134 266 C138 252 131 243 126 220 C119 188 116 148 115 116 C114 84 108 60 100 46 Z"/>
+  <ellipse class="nostril" cx="84" cy="274" rx="9" ry="5"/>
+  <ellipse class="nostril" cx="116" cy="274" rx="9" ry="5"/>
+  <g>
+    <circle class="kp" cx="100" cy="46"  r="3"/><text class="kl" x="104" y="44">眉间</text>
+    <circle class="kp" cx="100" cy="96"  r="3"/><text class="kl" x="104" y="94">鼻根 nasion</text>
+    <circle class="kp" cx="100" cy="132" r="3"/><text class="kl" x="104" y="130">鼻背中点</text>
+    <circle class="kp" cx="100" cy="168" r="3"/><text class="kl" x="104" y="166">rhinion</text>
+    <circle class="kp" cx="100" cy="232" r="3"/><text class="kl" x="104" y="230">鼻尖上区</text>
+    <circle class="kp" cx="100" cy="250" r="3"/><text class="kl" x="104" y="248">鼻尖 tip</text>
+    <circle class="kp" cx="100" cy="272" r="3"/><text class="kl" x="104" y="270">鼻小柱</text>
+    <circle class="kp" cx="100" cy="282" r="3"/><text class="kl" x="104" y="286">鼻下点</text>
+    <circle class="kp" cx="74"  cy="250" r="3"/><text class="kl" x="54"  y="246">左鼻翼缘</text>
+    <circle class="kp" cx="126" cy="250" r="3"/><text class="kl" x="130" y="246">右鼻翼缘</text>
+    <circle class="kp" cx="70"  cy="266" r="3"/><text class="kl" x="48"  y="270">左基底</text>
+    <circle class="kp" cx="130" cy="266" r="3"/><text class="kl" x="134" y="270">右基底</text>
+  </g>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" width="240" height="320">
+  <style>
+    .body { fill:#f2c6a0; stroke:#3a3f45; stroke-width:2.5; stroke-linejoin:round; }
+    .kp { fill:#e5484d; stroke:#ffffff; stroke-width:1.3; }
+    .kl { font:600 9px system-ui,sans-serif; fill:#b3242a; }
+  </style>
+  <path class="body" d="M158 56 C142 72 130 92 124 114 C120 132 115 162 109 196 C104 222 98 238 86 252 C82 258 82 266 90 274 C96 280 106 286 112 290 C108 286 102 282 98 276 L118 272 C126 278 134 288 142 300 L158 300 Z"/>
+  <g>
+    <circle class="kp" cx="150" cy="60"  r="3"/><text class="kl" x="156" y="58">眉间</text>
+    <circle class="kp" cx="122" cy="112" r="3"/><text class="kl" x="128" y="110">鼻根 nasion</text>
+    <circle class="kp" cx="112" cy="168" r="3"/><text class="kl" x="118" y="166">rhinion</text>
+    <circle class="kp" cx="96"  cy="236" r="3"/><text class="kl" x="70"  y="232">鼻尖上区</text>
+    <circle class="kp" cx="80"  cy="252" r="3"/><text class="kl" x="52"  y="250">鼻尖 tip</text>
+    <circle class="kp" cx="108" cy="286" r="3"/><text class="kl" x="114" y="288">鼻小柱</text>
+    <circle class="kp" cx="112" cy="290" r="3"/><text class="kl" x="118" y="296">鼻下点</text>
+    <circle class="kp" cx="120" cy="272" r="3"/><text class="kl" x="126" y="270">鼻翼基底</text>
+    <circle class="kp" cx="136" cy="300" r="3"/><text class="kl" x="142" y="302">上唇</text>
+  </g>
+</svg>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('.card').forEach(function (card) {
+    var svg = card.querySelector('svg.asset');
+    if (!svg) return;
+    card.querySelectorAll('button[data-mode]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        card.querySelectorAll('button[data-mode]').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        var m = btn.dataset.mode;
+        svg.querySelectorAll('.fill').forEach(function (f) {
+          f.style.display = (m === 'outline') ? 'none' : 'block';
+          f.style.opacity = (m === 'kp') ? '0.35' : '';
+        });
+        svg.querySelectorAll('.outline').forEach(function (o) {
+          o.style.display = (m === 'outline') ? 'block' : 'none';
+        });
+        svg.querySelectorAll('.kp').forEach(function (k) {
+          k.style.display = (m === 'kp') ? 'block' : 'none';
+        });
+      });
+    });
+  });
+</script>
+</body>
+</html>

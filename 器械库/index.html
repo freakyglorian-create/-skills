@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>鼻部整形 · 术后恢复期器械资产库</title>
+<style>
+  :root{
+    --ink:#1d2329; --mut:#66707c; --line:#e5e8ec; --bg:#f6f7f9;
+    --accent:#e5484d; --skin1:#f6cdab; --skin2:#dfa87c; --card:#ffffff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.65 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg)}
+  header{padding:40px 0 8px;background:linear-gradient(180deg,#fff,var(--bg));border-bottom:1px solid var(--line)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+  header h1{margin:0 0 8px;font-size:26px;letter-spacing:.5px}
+  header .lede{color:var(--mut);font-size:14.5px;max-width:760px;margin:0 0 6px}
+  .badges{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 4px}
+  .badge{font-size:12px;padding:3px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--mut)}
+  h2.sec{font-size:19px;margin:42px 0 4px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .sec-note{color:var(--mut);font-size:13px;margin:0 0 16px}
+
+  /* 时间线 */
+  .timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:18px 0}
+  .tl{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 12px 14px}
+  .tl .t{font-size:12px;color:var(--mut);margin-bottom:6px}
+  .tl .w{font-size:13.5px;font-weight:600;margin-bottom:6px}
+  .tl .d{font-size:12.5px;color:var(--ink);line-height:1.5}
+  .tl .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);display:inline-block;margin-right:6px}
+  @media(max-width:820px){.timeline{grid-template-columns:repeat(2,1fr)}}
+
+  /* 组合演示 */
+  .compo{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0}
+  .comp{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center}
+  .comp h3{margin:0 0 2px;font-size:15px}
+  .comp .sub{color:var(--mut);font-size:12px;margin-bottom:10px}
+  .comp .stagebox{background:radial-gradient(120% 100% at 50% 0%,#f3d8bc,#e7c3a0);border-radius:10px;padding:10px 6px}
+  .comp svg{max-height:250px;width:auto}
+  @media(max-width:820px){.compo{grid-template-columns:1fr}}
+
+  /* 关键点参考 */
+  .refrow{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
+  .ref{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+  .ref .cap{font-size:12.5px;color:var(--mut);margin-top:6px}
+  .ref svg{height:260px;width:auto}
+  .checker{background:repeating-conic-gradient(#ececec 0% 25%,#fff 0% 50%) 0 0/16px 16px;border:1px solid var(--line);border-radius:10px}
+
+  /* 器械卡 */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0}
+  .devcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column}
+  .devcard h3{margin:0;font-size:15px}
+  .devcard .en{color:var(--mut);font-size:12px;margin-bottom:10px;display:block}
+  .tabs{display:flex;gap:6px;margin-bottom:10px}
+  .tabs button{font:12.5px system-ui,sans-serif;padding:4px 11px;border:1px solid var(--line);background:#fff;border-radius:999px;cursor:pointer;color:#374151}
+  .tabs button.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .artbox{padding:10px;text-align:center;flex:1}
+  .artbox img{width:100%;height:auto}
+  .files{margin-top:10px;font-size:11.5px;color:var(--mut);background:#f1f3f5;border-radius:8px;padding:6px 9px;font-family:ui-monospace,Consolas,monospace;word-break:break-all}
+  @media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+
+  details.sum{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:16px 0}
+  details.sum summary{cursor:pointer;font-weight:600;font-size:15px}
+  details.sum .body{margin-top:10px;color:#33404d;font-size:14px}
+  details.sum ul{margin:8px 0 8px 0;padding-left:20px}
+  details.sum li{margin:4px 0}
+  details.sum a{color:#0b6bcb}
+  footer{color:var(--mut);font-size:12.5px;padding:30px 0 50px;border-top:1px solid var(--line);margin-top:40px}
+  footer a{color:var(--mut)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>鼻部整形 · 术后恢复期器械资产库</h1>
+    <p class="lede">一套用于「鼻部整形术后恢复期模拟」的写实矢量 + 透明 PNG 资产：鼻夹板、胶带、敷料、鼻栓、冷敷。每个器械含 <b>标准图 / 轮廓 / 关键点</b> 三种输出与 <b>正面 / 侧面 / 模板</b> 三视角，透明底可直接叠加到真实人脸照片上。</p>
+    <div class="badges">
+      <span class="badge">SVG 矢量（可编辑）</span>
+      <span class="badge">透明 PNG ×3 倍高清</span>
+      <span class="badge">关键点配准</span>
+      <span class="badge">多视角</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <details class="sum" open>
+    <summary>📋 研究摘要：鼻部整形与术后固定（点击收起）</summary>
+    <div class="body">
+      <ul>
+        <li><b>夹板三类</b>：热塑（Thermoplastic/Aquaplast，水浴加热塑形、轻便隐蔽）、铝制（Aluminum/Denver，轻、内衬泡沫、带 Velcro 束带）、石膏（POP，固定最稳但笨重）。仅骨性结构改动才需刚性夹板，纯软骨矫正可只用胶带。</li>
+        <li><b>固定时间</b>：鼻夹板常规佩戴 <b>5~7 天</b>（拆线时一并取下，部分医生至 7~10 天）；去除夹板后转 <b>夜间胶带</b> 固定约 <b>2~4 周</b>，位置从鼻尖上区转折到鼻根。</li>
+        <li><b>恢复期</b>：0–2 天肿胀淤青高峰（冷敷、垫高头部、胡须敷料/滴液垫吸渗血、鼻内填塞 1–2 天拆除）；2 周基本消肿；3~6 个月完全消肿；鼻尖最后定型可达 6–12 个月甚至 18 个月。</li>
+        <li><b>胶带贴法</b>：竖条贴鼻背（鼻根→鼻尖上区）+ 横条加固；部分医生先贴鼻尖上区再贴鼻根与鼻背。</li>
+      </ul>
+      <p style="font-size:12.5px;color:var(--mut)">来源：
+        <a href="https://www.drdenizdemir.com/types-of-nose-splints">Types of Nose Splints</a> ·
+        <a href="https://www.spiggle-theis.com/en/products/rhinology/nasal-splints">Spiggle-Theis Nasal Splints</a> ·
+        <a href="https://dtrmedical.com/wp-content/uploads/2023/10/M-168-Denver-Splint-UK-Product-Sheet.pdf">Denver Splint® 产品页</a> ·
+        <a href="https://noranugent.co.uk/blog/rhinoplasty-recovery-timeline/">Nora Nugent Recovery Timeline</a> ·
+        <a href="https://myhealth.alberta.ca/health/AfterCareInformation/pages/conditions.aspx?HwId=zc2691">Alberta Health: Rhinoplasty at Home</a> ·
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10513128/">术后贴胶带 vs 3D 夹板（PMC）</a> ·
+        <a href="https://m.youlai.cn/video/article/F645A0Ehct.html">有来医生：做完鼻子后注意</a>
+      </p>
+    </div>
+  </details>
+
+  <h2 class="sec">恢复期时间线</h2>
+  <p class="sec-note">器械在恢复各阶段的组合方式（用于模拟图的「术后第 N 天」场景）</p>
+  <div class="timeline">
+    <div class="tl"><div class="t">术后 0–2 天</div><div class="w"><span class="dot"></span>夹板 + 敷料 + 冷敷</div><div class="d">鼻夹板、胡须敷料/滴液垫、鼻内填塞、冷敷，肿胀淤青高峰</div></div>
+    <div class="tl"><div class="t">术后 3–7 天</div><div class="w"><span class="dot"></span>夹板在位</div><div class="d">敷料/鼻栓拆除，胶带保留，4–7 天拆线</div></div>
+    <div class="tl"><div class="t">术后 7–10 天</div><div class="w"><span class="dot"></span>拆夹板</div><div class="d">移除鼻夹板，转夜间胶带固定</div></div>
+    <div class="tl"><div class="t">术后 2–4 周</div><div class="w"><span class="dot"></span>夜间胶带</div><div class="d">鼻尖上区→鼻根贴胶带，减轻水肿、帮助皮肤回贴</div></div>
+    <div class="tl"><div class="t">术后 1–3 月</div><div class="w"><span class="dot"></span>基本消肿</div><div class="d">大部分肿胀消退，个别继续夜间胶带</div></div>
+    <div class="tl"><div class="t">术后 6–12 月</div><div class="w"><span class="dot"></span>最终形态</div><div class="d">鼻尖最后定型（可达 12–18 个月）</div></div>
+  </div>
+
+  <h2 class="sec">真实鼻部贴合演示</h2>
+  <p class="sec-note">器械叠加在鼻部皮肤上的合成效果（演示透明资产如何「贴到脸上」；实际使用时把透明 PNG 覆盖到患者照片即可）</p>
+  <div class="compo">
+
+    <!-- 组合①：夹板期 -->
+    <div class="comp">
+      <h3>术后 1 周 · 夹板期</h3>
+      <div class="sub">热塑夹板 + 胶带</div>
+      <div class="stagebox">
+        <svg viewBox="0 0 200 320" width="160" height="256">
+          <defs>
+            <linearGradient id="c1skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6cdab"/><stop offset="1" stop-color="#dfa87c"/></linearGradient>
+            <radialGradient id="c1dome" cx="0.42" cy="0.34" r="0.85"><stop offset="0" stop-color="#fff"/><stop offset="0.5" stop-color="#f5f1e7"/><stop offset="1" stop-color="#cfc7b3"/></radialGradient>
+            <filter id="c1sh" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="3.5" stdDeviation="4.5" flood-color="#241d16" flood-opacity="0.34"/></filter>
+          </defs>
+          <path fill="url(#c1skin)" stroke="#8a5a36" stroke-width="1.2" stroke-linejoin="round" d="M100 46 C92 60 86 84 85 116 C84 148 81 188 74 220 C69 243 62 252 66 266 C69 275 74 279 80 280 C86 281 92 282 100 283 C108 282 114 281 120 280 C126 279 131 275 134 266 C138 252 131 243 126 220 C119 188 116 148 115 116 C114 84 108 60 100 46 Z"/>
+          <ellipse cx="84" cy="274" rx="9" ry="5" fill="#b57956" stroke="#8a5a36" stroke-width="1"/>
+          <ellipse cx="116" cy="274" rx="9" ry="5" fill="#b57956" stroke="#8a5a36" stroke-width="1"/>
+          <g fill="#e6d6b8" opacity="0.85" stroke="#c9b28f" stroke-width="0.6">
+            <rect x="87" y="88" width="26" height="148" rx="6"/>
+            <rect x="58" y="140" width="84" height="22" rx="5"/>
+            <rect x="60" y="186" width="80" height="22" rx="5"/>
+          </g>
+          <path fill="url(#c1dome)" filter="url(#c1sh)" stroke="#b7af9c" stroke-width="1.1" d="M100 88 C88 104 76 128 70 156 C64 184 62 200 72 214 C80 226 90 232 100 233 C110 232 120 226 128 214 C138 200 136 184 130 156 C124 128 112 104 100 88 Z"/>
+          <path d="M100 96 L100 224" stroke="#fff" stroke-width="1.4" opacity="0.5" fill="none"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 组合②：夜间胶带 -->
+    <div class="comp">
+      <h3>术后 3 周 · 夜间胶带</h3>
+      <div class="sub">仅医用胶带（鼻尖上区→鼻根）</div>
+      <div class="stagebox">
+        <svg viewBox="0 0 200 320" width="160" height="256">
+          <defs>
+            <linearGradient id="c2skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6cdab"/><stop offset="1" stop-color="#dfa87c"/></linearGradient>
+          </defs>
+          <path fill="url(#c2skin)" stroke="#8a5a36" stroke-width="1.2" stroke-linejoin="round" d="M100 46 C92 60 86 84 85 116 C84 148 81 188 74 220 C69 243 62 252 66 266 C69 275 74 279 80 280 C86 281 92 282 100 283 C108 282 114 281 120 280 C126 279 131 275 134 266 C138 252 131 243 126 220 C119 188 116 148 115 116 C114 84 108 60 100 46 Z"/>
+          <ellipse cx="84" cy="274" rx="9" ry="5" fill="#b57956" stroke="#8a5a36" stroke-width="1"/>
+          <ellipse cx="116" cy="274" rx="9" ry="5" fill="#b57956" stroke="#8a5a36" stroke-width="1"/>
+          <g fill="#e6d6b8" opacity="0.88" stroke="#c9b28f" stroke-width="0.6">
+            <rect x="87" y="88" width="26" height="148" rx="6"/>
+            <rect x="58" y="140" width="84" height="22" rx="5"/>
+            <rect x="60" y="186" width="80" height="22" rx="5"/>
+          </g>
+          <path d="M94 118 C97 120 97 124 94 128" stroke="#b99a6d" stroke-width="1" opacity="0.6" fill="none"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 组合③：术后当天 -->
+    <div class="comp">
+      <h3>术后当天 · 冷敷 + 敷料</h3>
+      <div class="sub">胡须敷料/滴液垫 + 冷敷凝胶</div>
+      <div class="stagebox">
+        <svg viewBox="0 0 200 320" width="160" height="256">
+          <defs>
+            <linearGradient id="c3skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6cdab"/><stop offset="1" stop-color="#dfa87c"/></linearGradient>
+            <linearGradient id="c3gel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dff2fb"/><stop offset="1" stop-color="#8cc3d8"/></linearGradient>
+          </defs>
+          <path fill="url(#c3skin)" stroke="#8a5a36" stroke-width="1.2" stroke-linejoin="round" d="M100 46 C92 60 86 84 85 116 C84 148 81 188 74 220 C69 243 62 252 66 266 C69 275 74 279 80 280 C86 281 92 282 100 283 C108 282 114 281 120 280 C126 279 131 275 134 266 C138 252 131 243 126 220 C119 188 116 148 115 116 C114 84 108 60 100 46 Z"/>
+          <ellipse cx="84" cy="274" rx="9" ry="5" fill="#b57956" stroke="#8a5a36" stroke-width="1"/>
+          <ellipse cx="116" cy="274" rx="9" ry="5" fill="#b57956" stroke="#8a5a36" stroke-width="1"/>
+          <g fill="#fff" opacity="0.94" stroke="#c8c3b8" stroke-width="0.8">
+            <rect x="30" y="256" width="44" height="15" rx="4" opacity="0.96"/>
+            <rect x="126" y="256" width="44" height="15" rx="4" opacity="0.96"/>
+            <rect x="66" y="250" width="68" height="25" rx="8"/>
+          </g>
+          <path d="M76 262 H124" stroke="#e2ddd2" stroke-width="1" opacity="0.8"/>
+          <path fill="url(#c3gel)" opacity="0.88" stroke="#6fa8bc" stroke-width="1" d="M28 132 C36 126 46 124 54 126 C60 128 64 134 62 140 C60 146 52 148 44 146 C36 144 28 138 28 132 Z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sec">鼻部解剖关键点参考</h2>
+  <p class="sec-note">器械贴合配准的基准点位（正面 + 侧面），用于把透明资产对齐到照片上的鼻子</p>
+  <div class="refrow">
+    <div class="ref"><img src="png/nose-base-front.png" alt="鼻部正面关键点" style="height:280px"><div class="cap">正面关键点</div></div>
+    <div class="ref"><img src="png/nose-base-profile.png" alt="鼻部侧面关键点" style="height:280px"><div class="cap">侧面关键点</div></div>
+  </div>
+
+  <h2 class="sec">器械资产库</h2>
+  <p class="sec-note">点击「标准图 / 轮廓 / 关键点」切换；白色棋盘格 = 透明背景。每个器械三视角：正面 / 侧面 / 模板。</p>
+  <div class="grid" id="grid"></div>
+
+  <footer>
+    <div>用途说明：本库为原创示意图，用于教学、产品原型与术前术后沟通演示。真实「标准照片」请以器械厂商产品页与教科书影像为准。真实患者照片合成时，请将 <code>png/</code> 下透明 PNG 以「正片叠底/柔光」混合模式叠加，并按鼻部关键点对齐缩放。</div>
+    <div style="margin-top:8px">目录：<code>assets/*.svg</code>（矢量源）· <code>png/*.png</code>（透明位图）· <code>keypoints/landmarks.json</code>（关键点坐标）· <code>export_png.py</code>（重新导出 PNG）</div>
+  </footer>
+</div>
+
+<script>
+  var DEVICES = [
+    { name: "splint-thermoplastic", cn: "热塑鼻夹板", en: "Thermoplastic / Aquaplast splint" },
+    { name: "splint-aluminum",      cn: "铝制鼻夹板", en: "Aluminum / Denver splint" },
+    { name: "splint-plaster",       cn: "石膏鼻夹板", en: "Plaster (POP) cast" },
+    { name: "tape-micropore",       cn: "医用胶带 / 免缝胶带", en: "Micropore tape" },
+    { name: "tape-steristrip",      cn: "免缝胶条", en: "Steri-Strip" },
+    { name: "dressing-gauze",       cn: "纱布敷料", en: "Gauze pad" },
+    { name: "dressing-drip-pad",    cn: "胡须敷料 / 滴液垫", en: "Mustache dressing / drip pad" },
+    { name: "packing-doyle",        cn: "鼻内填塞 / Doyle 鼻栓", en: "Doyle splint / nasal packing" },
+    { name: "cold-gel-mask",        cn: "冷敷凝胶面罩", en: "Cold gel mask" }
+  ];
+  var grid = document.getElementById("grid");
+  DEVICES.forEach(function (d) {
+    var card = document.createElement("div");
+    card.className = "devcard";
+    card.innerHTML =
+      '<h3>' + d.cn + '</h3><span class="en">' + d.en + '</span>' +
+      '<div class="tabs">' +
+        '<button data-v="standard" class="active">标准图</button>' +
+        '<button data-v="outline">轮廓</button>' +
+        '<button data-v="kp">关键点</button>' +
+      '</div>' +
+      '<div class="artbox checker"><img class="art" src="png/' + d.name + '-standard.png" alt="' + d.cn + '"></div>' +
+      '<div class="files">assets/' + d.name + '.svg<br>png/' + d.name + '-{standard,outline,kp}.png</div>';
+    grid.appendChild(card);
+    card.querySelectorAll("button[data-v]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        card.querySelectorAll("button[data-v]").forEach(function (x) { x.classList.remove("active"); });
+        b.classList.add("active");
+        card.querySelector("img.art").src = "png/" + d.name + "-" + b.dataset.v + ".png";
+      });
+    });
+  });
+</script>
+</body>
+</html>
